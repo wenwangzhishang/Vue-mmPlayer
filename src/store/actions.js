@@ -9,6 +9,8 @@ function findIndex(list, music) {
 
 //设置播放列表
 export const setPlaylist = function ({commit}, {list}) {
+    console.log('vuex接受'+{list});
+    console.log('vuex接受'+list);
     commit(types.SET_PLAYLIST, list);
     commit(types.SET_ORDERLIST, list);
 };

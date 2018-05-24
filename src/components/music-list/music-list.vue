@@ -72,6 +72,8 @@
         },
         watch: {
             list(newList, oldList) {
+                console.log('从playlist获取来的：'+newList);
+                console.log('从playlist获取来的详细的：'+newList[0]);
                 if (this.listType !== 2) {
                     return
                 }

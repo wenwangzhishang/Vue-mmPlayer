@@ -15,6 +15,7 @@ const mutations = {
     },
     //修改播放列表
     [types.SET_PLAYLIST](state, playlist) {
+        console.log('mutation接受的'+playlist);
         state.playlist = playlist
     },
     //修改顺序列表

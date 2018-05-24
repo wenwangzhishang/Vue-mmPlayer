@@ -42,8 +42,11 @@
             topList(defaultSheetId)
             .then((res) => {
                 if (res.status === 200) {
+                    // console.log('播放列表请求',res.data.playlist.tracks);
                     let list = this._formatSongs(res.data.playlist.tracks.slice(0,100));
+                    console.log(list);
                     this.setPlaylist({list});
+                    // this.setPlaylist(list);
                     this._hideLoad()
                 }
             })
